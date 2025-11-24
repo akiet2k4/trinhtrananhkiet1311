@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Bài tập 2 - Form đăng ký</title>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<header><a href="index.html">◀ Back</a> <h1>Bài 2 - Form đăng ký</h1></header>
+
+<main class="container">
+  <form id="registerForm" class="form-card" novalidate>
+    <label>Họ tên<input id="name" required/></label>
+    <label>Email<input id="email" type="email" required/></label>
+    <label>Mật khẩu<input id="password" type="password" required/></label>
+    <label class="checkbox"><input id="agree" type="checkbox"/> Đồng ý điều khoản</label>
+    <button type="submit">Đăng ký</button>
+  </form>
+  <div id="registerMsg" class="message"></div>
+</main>
+
+<script src="js/script.js"></script>
+<script>
+initRegisterForm();
+</script>
+</body>
+</html>
